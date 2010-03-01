@@ -557,13 +557,11 @@ org.sakaiproject.nakamura.jpaprovider
       <artifactId>org.sakaiproject.nakamura.files</artifactId>
       <version>0.3-SNAPSHOT</version>
     </bundle>
-<!--
     <bundle>
       <groupId>org.sakaiproject.nakamura</groupId>
       <artifactId>org.sakaiproject.nakamura.uxloader</artifactId>
       <version>0.3-SNAPSHOT</version>
     </bundle>
--->
     <bundle>
       <groupId>org.sakaiproject.nakamura</groupId>
       <artifactId>org.sakaiproject.nakamura.search</artifactId>
