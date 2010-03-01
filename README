@@ -1,1 +1,7 @@
 These are the source files for Camtools10.
+
+To start camtools execute:
+mvn clean install
+
+If the build passed succesfully, you can now start up the server via
+java -jar app/target/uk.ac.cam.caret.nakamura.app-0.1-SNAPSHOT.jar
