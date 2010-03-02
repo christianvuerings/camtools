@@ -4,14 +4,19 @@
     "sakai:request-proxy-method": "GET",
     "sakai:postprocessor": "iCal",
     "sakai:title": "Talks.cam - Featured talks.",
-    "sakai:shortDescription": "Show the featured talks from talks.cam.ac.uk_.",
+    "sakai:shortDescription": "Show the featured talks from talks.cam.ac.uk.",
     "sakai:parameters" : [
-        "{\"name\" : \"limit\", \"description\" : \"Limit the amount of feeds you want.\"}"
+        "{\"name\" : \"limit\", \"description\" : \"(Optional) Limit the amount of feeds you want.\"}",
+        "{\"name\" : \"start_time\", \"description\" : \"(Optional) Show talks starting from this starting date.\"}",
+        "{\"name\" : \"end_time\", \"description\" : \"(Optional) Show talks until this date.\"}",
+        "{\"name\" : \"seconds_before_today\", \"description\" : \"(Optional) Get talks that are so many seconds before today.\"}",
+        "{\"name\" : \"seconds_after_today\", \"description\" : \"(Optional) Get talks that are so many seconds after today.\"}",
+        "{\"name\" : \"term\", \"description\" : \"(Optional) If this equals 'current', the you only see the talks for the current term.\"}"
     ],
     "sakai:description": [
         "Get the latest featured talks from talks.cam.ac.uk.",
     ],
     "sakai:response": [
         "Will return a JSON representation of the iCal data that gets sent back from talks.cam.ac.uk.",
-    ],
+    ]
 }
