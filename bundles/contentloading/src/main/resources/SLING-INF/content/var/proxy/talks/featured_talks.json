@@ -1,10 +1,10 @@
 {
     "sling:resourceType": "sakai/proxy",
-    "sakai:request-proxy-endpoint": "http://talks.cam.ac.uk/show/ics/5606?layout=empty#if( $limit )&limit=${limit}#end",
+    "sakai:request-proxy-endpoint": "http://talks.cam.ac.uk/show/ics/5606?layout=empty#if( $limit )&limit=${limit}#end#if( $start_time )&start_time=${start_time}#end#if( $end_time )&end_time=${end_time}#end#if( $seconds_before_today )&seconds_before_today=${seconds_before_today}#end#if( $seconds_after_today )&seconds_after_today=${seconds_after_today}#end#if( $term )&term=${term}#end",
     "sakai:request-proxy-method": "GET",
     "sakai:postprocessor": "iCal",
     "sakai:title": "Talks.cam - Featured talks.",
-    "sakai:shortDescription": "Show the featured talks from talks.cam.ac.uk.",
+    "sakai:shortDescription": "Show the featured talks from talks.cam.ac.uk_.",
     "sakai:parameters" : [
         "{\"name\" : \"limit\", \"description\" : \"Limit the amount of feeds you want.\"}"
     ],
@@ -12,6 +12,6 @@
         "Get the latest featured talks from talks.cam.ac.uk.",
     ],
     "sakai:response": [
-                     "Will return a JSON representation of the iCal data that gets sent back from talks.cam.ac.uk.",
+        "Will return a JSON representation of the iCal data that gets sent back from talks.cam.ac.uk.",
     ],
 }
